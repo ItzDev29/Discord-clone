@@ -5,6 +5,7 @@
     "tailwindcss": "^3.2.7"
   },
   "name": "discord-clone",
+  "homepage": "https://ItzDev29.github.io/Discord_clone",
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "dependencies": {
@@ -75,7 +76,11 @@
     "yaml": "^1.10.2"
   },
   "scripts": {
-    "start" : "vite"
+    "start" : "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build",
+    "dev": "webpack serve"
   },
   "author": "",
   "license": "ISC",
